@@ -15,9 +15,9 @@ const AppRoute = ({
     <Route
       {...rest}
       render={(props) => {
-        if (isAuthProtected && _.isEmpty(userStore.authUser)) {
-          return <Redirect to={{ pathname: "/login" }} />;
-        }
+        // if (isAuthProtected && _.isEmpty(userStore.authUser)) {
+        //   return <Redirect to={{ pathname: "/login" }} />;
+        // }
 
         return (
           <Layout {...rest}>

@@ -123,7 +123,7 @@ export default class AuthenticatedApiClient {
   getCurrentUserAuthorization() {
     const currentUser = this.userStore.authUser;
     console.log("currentUser", this.userStore.authUser);
-    if (currentUser) {
+    if (currentUser && currentUser.accessToken) {
       const token = currentUser.accessToken;
       return `Bearer ${token}`.trim();
     } else {

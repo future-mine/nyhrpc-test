@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation, withRouter } from "react-router-dom";
+import { useHistory, withRouter } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import AuthenticatedApiClient from "../../services/api-client";
 import UserStore from "../../store/user-store";
@@ -10,7 +10,7 @@ const userStore = UserStore.getInstance();
 const Login = () => {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
-  const location = useLocation();
+  const history = useHistory();
   const login = async () => {
     try {
       const url = "https://freddy.codesubmit.io/login";
@@ -22,7 +22,7 @@ const Login = () => {
         accessToken: access_token,
         refreshToken: refresh_token,
       });
-      location.push("/dashboard");
+      history.push("/dashboard");
     } catch (error) {
       console.error(error);
     }

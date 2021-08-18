@@ -22,3 +22,26 @@
   padding: 10px;
   font-size: 20px;
 }
+.root tbody {
+  display: block;
+  height: 500px;
+  overflow: auto;
+}
+.root thead,
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed; /* even columns width , fix width of table too*/
+}
+.root thead {
+  width: calc(
+    100% - 1em
+  ); /* scrollbar is average 1em/16px width, remove it from thead width */
+}
+.root table {
+  width: 400px;
+}
+.paginationContainer {
+  display: flex;
+  align-items: center;
+}
