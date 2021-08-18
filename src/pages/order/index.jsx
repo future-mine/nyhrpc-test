@@ -27,9 +27,9 @@ const Order = () => {
         setPage(res.page > 0 ? res.page : 1);
       }
     } catch (err) {
-      console.log(err);
+      console.log(err.code);
       userStore.clearAuthUser();
-      // history.push("/login");
+      history.push("/login");
     }
   };
 
