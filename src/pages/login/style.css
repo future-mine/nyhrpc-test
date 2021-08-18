@@ -1,0 +1,33 @@
+.login-container {
+  max-width: 500px;
+  min-height: 500px;
+  padding: 50px 20px;
+  border: solid 5px #555;
+  margin: auto;
+  margin-top: 50px;
+}
+.login-header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.row-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.row-container input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+}
+.row-container button {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+}

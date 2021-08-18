@@ -1,0 +1,31 @@
+.root {
+  padding: 30px;
+}
+.headContainer {
+  margin-bottom: 20px;
+}
+.headContainer p {
+  font-size: 50px;
+}
+.infoContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+.infoContainer > div {
+  padding: 5px;
+  margin-right: 30px;
+  border: solid 3px #888;
+}
+.itemHeader p {
+  font-size: 40px;
+}
+.chartContainer {
+  margin-bottom: 20px;
+}
+.sellorContainer {
+  margin-bottom: 20px;
+}
+.root table td {
+  padding: 10px;
+  font-size: 20px;
+}
